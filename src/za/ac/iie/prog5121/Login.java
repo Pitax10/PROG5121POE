@@ -3,8 +3,8 @@ package za.ac.iie.prog5121;
 public class Login {
     private String registeredUsername;
     private String registeredPassword;
-    private String firstName = "";
-    private String lastName = "";
+    private String firstName = "Kyle";
+    private String lastName = "Smith";
 
     public boolean checkUserName(String username) {
         return username.contains("_") && username.length() <= 5;
@@ -72,5 +72,8 @@ public class Login {
     public String returnLoginStatus(String username, String password) {
         return returnLoginStatus(loginUser(username, password));
     }
-  
+
+    void storeUser(String firstName, String lastName, String username, String password) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }
