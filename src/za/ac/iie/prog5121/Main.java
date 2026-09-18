@@ -21,7 +21,7 @@ Login login = new Login();
           System.out.print("Enter Cellphone (e.g. +27821234567): ");
           String CellNumber = scanner.nextLine();
 
-          String registrationResult = login.registerUser(username, password, CellNumber, "Kyle", "Smith");
+          String registrationResult = login.registerUser(username, password, CellNumber, firstName, lastName);
           System.out.println(registrationResult);
 
 if (login.checkUserName(username) && login.checkPassword(password) && login.checkCellPhoneNumber(CellNumber)) {
